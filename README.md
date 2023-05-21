@@ -82,10 +82,16 @@
 7. 주기적인 신호들의 스펙트럼 분석
 8. 스펙트로그램
 9. 고속 푸리에 변환 (FFT)
-## Part 2. Audio for ML
-
-## Part 3. Audio for DL
-
-## Part 4. Audio Project
+## Part 2. Audio for ML/DL
+- [DACON] 기계 고장 진단
+- https://dacon.io/competitions/official/236036/codeshare/7106?page=1&dtype=recent
+- [DACON] 음성 감정 인식
+- https://dacon.io/competitions/official/236105/overview/description
+- [DACON] 기계 고장 진단
+- https://dacon.io/competitions/official/236036/overview/description
+- [DACON] 영어 음성 국적 분류
+- https://dacon.io/competitions/official/235738/overview/description
+- [DACON] 음성 중첩 데이터 분류
+- https://dacon.io/competitions/official/235616/overview/description
 
 ## Appendix
