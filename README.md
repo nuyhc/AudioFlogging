@@ -82,7 +82,79 @@
 7. 주기적인 신호들의 스펙트럼 분석
 8. 스펙트로그램
 9. 고속 푸리에 변환 (FFT)
-## Part 2. Audio for ML/DL
+
+## Part 2. DASP(Digital Audio Signal Processing)
+### 2-1. Discrete-Time Signal Processing
+1. 디지털 신호 처리 개요 (Review of Discrete-Time Signal Processing)
+2. z-변환 (The z-Transform)
+3. 디지털 신호와 시스템의 주파수 해석 (Frequency Analysis of Discrete-Time Signals and Systems)
+4. 연속시간 신호의 샘플링 (Sampling of Continuous-Time Signals)
+5. 이산 푸리에 변환 (The Discrete Fourier Transform)
+6. 효율적인 DFT 계산: FFT 알고리즘 (Efficient Computation of the DFT: FFT Algorithms)
+7. 디지털 시스템의 구현 (Implementation of Discrete-Time Systems)
+### 2-2. Waveform과 Physical Synthesis
+1. 진폭과 주파수 변조 (Amplitude and Frequency Modulation)
+2. 샘플링에서 고려해야 할 주파수 및 시간 영역 (Frequency and Time-Domain Considerations in Sampling)
+3. 가산 합성과 필터 설계 (Additive Synthesis and Filter Design)
+4. 변조된 합성 파형 (Modulated and Composite Waveforms)
+5. 음향 시스템의 물리적 모델링 (Physical Modeling of Acoustic Systems)
+### 2-3. Autocorrelation과 Pitch Detection
+1. 자기상관함수 (Autocorrelation Function)
+2. 자기상관을 이용한 음높이 감지 (Pitch Detection by Autocorrelation)
+3. 제로 크로싱 비율 방법 (Zero-Crossing Rate Method)
+4. 스펙트럼 분석 방법 (Spectral Analysis Method)
+5. Harmonic Product Spectrum 방법 (Harmonic Product Spectrum Method)
+### 2-4. Digital Effects Processing
+1. 딜레이 효과 (Delay Effects)
+2. 리버브 (Reverberation)
+3. 변조 효과 (Modulation Effects)
+4. 필터 효과 (Filter Effects)
+5. 다이나믹스 처리 (Dynamics Processing)
+6. 음높이 이펙트 및 하모나이제이션 (Pitch Shifting and Harmonization)
+7. 시간 및 주파수 왜곡 효과 (Time and Frequency-Warping Effects)
+### 2-5. Filter Banks과 Phase Vocoder
+1. 필터 뱅크 (Filter Banks)
+    - 필터 뱅크 설계 (Design of Filter Banks)
+    - 분석 및 합성 필터 뱅크의 구현 (Implementation of Analysis and Synthesis Filter Banks)
+2. 상대보강기(phase vocoder) (The Phase Vocoder)
+    - 상대보강기 알고리즘 (Phase Vocoder Algorithm)
+    - 시간 및 주파수 해상도 (Time and Frequency Resolution)
+    - 상대보강기의 응용 (Applications of the Phase Vocoder)
+### 2-6. 가청 모델과 오디오 코덱
+1. 심리음향학 (Psychoacoustics)
+    - 크리티컬 밴드 분석 (Critical Band Analysis)
+    - 마스킹 (Masking)
+2. MPEG-1 오디오 코더 (The MPEG-1 Audio Coder)
+    - 서브밴드 코딩 (Subband Coding)
+    - 심리음향 모델 (Psychoacoustic Model)
+    - 비트 할당 및 전송 (Bit Allocation and Transmission)
+3. MPEG-2 및 MPEG-4 오디오 코더 (MPEG-2 and MPEG-4 Audio Coders)
+    - 고급 오디오 코딩(AAC) (Advanced Audio Coding (AAC))
+    - 저비트 오디오 코딩 (Low Bit-Rate Audio Coding)
+    - 확장 가능한 오디오 코딩 (Scalable Audio Coding)
+    - 오디오 코딩 3(AC-3) (Audio Coding 3 (AC-3))
+    - 고조파 및 순간적인 파형 코딩 (Harmonic and Transient Waveform Coding)
+### 2-7. Sampling, Quantization, Dither
+1. 샘플링의 기본 개념 (Basic Concepts of Sampling)
+2. 연속시간 신호의 이산화 처리 (Discrete-Time Processing of Continuous-Time Signals)
+3. 주파수 영역에서 신호의 모호성: 에일리어싱 (Aliasing: Signal Ambiguity in the Frequency Domain)
+4. 샘플링 신호의 보간 (Interpolation of Sampled Signals)
+5. 양자화 (Quantization)
+6. 양자화 잡음 (Quantization Noise)
+7. 오버샘플링 변환기 (Oversampling Converters)
+8. 노이즈 쉐이핑 (Noise Shaping)
+9. 디더링 (Dither)
+### 2-8. Audio Signals의 Array Processing
+1. Array Processing 소개 (Introduction to Array Processing)
+2. 좁은 대역폭 빔포밍 (Narrowband Beamforming)
+3. 넓은 대역폭 빔포밍 (Broadband Beamforming)
+4. 공간 필터링 (Spatial Filtering)
+5. 다채널 리버브 감소 (Multichannel Reverberation Reduction)
+6. 도착 방향 추정 (Direction of Arrival Estimation)
+7. 마이크로폰 어레이 보정 (Microphone Array Calibration)
+8. 음성 및 오디오에 대한 Array Processing의 응용 (Applications of Array Processing to Speech and Audio)
+
+## Part 3. Audio for ML/DL
 - [DACON] 기계 고장 진단
 - https://dacon.io/competitions/official/236036/codeshare/7106?page=1&dtype=recent
 - [DACON] 음성 감정 인식
